@@ -1,0 +1,46 @@
+
+<div class='container py-5'>
+
+  <section class="jumbotron text-center header mb-0 col-md-12">
+    <div class="container mx-auto">
+      <div class='row align-items-center justify-content-center mb-2'>
+        <%= image_tag("kyklos.png", class: "d-block mx-5 logo") %> 
+      </div>
+    </div>
+    <h5 class="header textos col-md-8 mx-auto text">En Kyklos nos cuidamos. Comparte tu mood de hoy.</h5>
+  </section>
+
+
+  <h1 class='container d-block title mx-auto mt-3 mb-4'><%= @questions.last.title %></h1>
+
+  <div class='container row align-items-center justify-content-center col-md-8 mx-auto'>
+    <div class="card border-0" style="width: 25rem;">
+      <img src="assets/happy.jpg" class="card-img-top img-thumbnail moods-img" alt="...">
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 0), class:"btn btn-success active text d-block mx-auto col-md-6" %>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <img src="assets/bored.jpg" class="card-img-top img-thumbnail moods-img" alt="...">
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 1), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <img src="assets/angry.jpg" class="card-img-top img-thumbnail moods-img" alt="...">
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 2), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <img src="assets/sad.jpg" class="card-img-top img-thumbnail moods-img" alt="...">
+      <div class="card-body">
+        <%= link_to "Si soy", thanks_path(value: 3), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+  </div>
+</div>
+
