@@ -12,6 +12,10 @@
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0"
   },
+  "resolutions": {
+    "@babel/core": "7.13.15",
+    "@babel/preset-env": "7.13.15"
+  },
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
