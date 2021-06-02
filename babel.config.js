@@ -50,7 +50,8 @@ module.exports = function(api) {
       [
         '@babel/plugin-proposal-object-rest-spread',
         {
-          useBuiltIns: true
+          useBuiltIns: true,
+          loose: true
         }
       ],
       [
@@ -58,13 +59,15 @@ module.exports = function(api) {
         {
           helpers: false,
           regenerator: true,
-          corejs: false
+          corejs: false,
+          loose: true
         }
       ],
       [
         '@babel/plugin-transform-regenerator',
         {
-          async: false
+          async: false,
+          loose: true
         }
       ]
     ].filter(Boolean)
