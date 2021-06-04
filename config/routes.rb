@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :options
   get 'home/index'
   resources :questions
   root 'home#index'
