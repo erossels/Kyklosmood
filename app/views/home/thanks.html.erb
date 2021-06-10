@@ -13,4 +13,22 @@
     <%= image_tag('https://media.giphy.com/media/4ml290TZ35zOM/giphy.gif', class: "col-md-6 d-block thanks text-center my-4") %> 
   </div>
 
+  <div class="row align-items-center justify-content-center mb-2">
+    <% if !@answers.nil? %>
+      <% @answers.each do |answer| %>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text"> <%= answer.choice %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end  %>
+  </div>
+
+  <div class='container'>
+    <%= link_to "Volver", root_path, class:"btn btn-success active text d-block mx-auto col-md-6"%>
+  </div>
+
 </div>
+
+

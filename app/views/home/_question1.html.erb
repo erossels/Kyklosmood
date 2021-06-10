@@ -1,0 +1,29 @@
+ <div class='container row align-items-center justify-content-center col-md-8 mx-auto'>
+    <div class="card border-0" style="width: 25rem;">
+      <%= image_tag("happy.jpg", class:"card-img-top img-thumbnail moods-img") %>
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 0), class:"btn btn-success active text d-block mx-auto col-md-6" %>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <%= image_tag("bored.jpg", class:"card-img-top img-thumbnail moods-img") %>
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 1), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <%= image_tag("angry.jpg", class:"card-img-top img-thumbnail moods-img") %>
+      <div class="card-body">
+        <%= link_to "Si soy",  thanks_path(value: 2), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+
+    <div class="card border-0" style="width: 25rem;">
+      <%= image_tag("sad.jpg", class:"card-img-top img-thumbnail moods-img") %>
+      <div class="card-body">
+        <%= link_to "Si soy", thanks_path(value: 3), class:"btn btn-success active text d-block mx-auto col-md-6"%>
+      </div>
+    </div>
+  </div>
